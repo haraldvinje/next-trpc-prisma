@@ -1,5 +1,7 @@
 # Sample App
 
+Initialized with [ create-t3-app ](https://github.com/t3-oss/create-t3-app) and somewhat tweaked.
+
 ## Develop
 
 ### First time setup
