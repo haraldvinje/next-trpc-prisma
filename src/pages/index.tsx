@@ -15,7 +15,7 @@ const Home: NextPage = () => {
 
   const allExamples = trpc.useQuery(['example.getAll'])
 
-  const addMutation = trpc.useMutation(['example.add'], invalidQueries)
+  const addExample = trpc.useMutation(['example.add'], invalidQueries)
   const deleteByIdMutation = trpc.useMutation(['example.deleteById'], invalidQueries)
   const deleteLastMutation = trpc.useMutation(['example.deleteLast'], invalidQueries)
   const deleteAllMutation = trpc.useMutation(['example.deleteAll'], invalidQueries)
@@ -34,7 +34,7 @@ const Home: NextPage = () => {
       <main className="container mx-auto flex min-h-screen flex-col items-center p-4">
         <div className="flex space-x-8">
           <button
-            onClick={async () => addMutation.mutate()}
+            onClick={async () => addExample.mutate()}
             className={`${buttonStyle} bg-green-500`}
           >
             Add Bro 😎
